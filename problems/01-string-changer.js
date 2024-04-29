@@ -15,7 +15,7 @@ modified in some way. The operations are:
 */
 
 function stringChanger(word, operation) {
-  // Your code here
+  // Your code here 
 }
 
 // console.log(stringChanger('foo', 'capitalize')); // 'Foo'

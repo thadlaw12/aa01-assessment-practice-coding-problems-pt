@@ -20,17 +20,18 @@ mostExpensiveGroceries function to solve the problem.
 */
 
 function costOfGroceries(groceries) {
-  // Your code here
+  // Your code here 
 }
 
 function mostExpensiveGroceries(groceriesList) {
-  // Your code here
+  // Your code here 
 }
 
-// const groceriesA = ["cheese", "butter", "eggs"];
-// const groceriesB = ["eggs", "milk", "bread", "bread"];
-// const groceriesC = ["cheese", "bread"];
-// const groceriesD = ["eggs", "butter"];
+
+// const groceriesA = ['cheese', 'butter', 'eggs'];
+// const groceriesB = ['eggs', 'milk', 'bread', 'bread'];
+// const groceriesC = ['cheese', 'bread'];
+// const groceriesD = ['eggs', 'butter'];
 
 // console.log(costOfGroceries(groceriesA)); // 8
 // console.log(costOfGroceries(groceriesB)); // 13
@@ -46,6 +47,7 @@ function mostExpensiveGroceries(groceriesList) {
 // console.log(mostExpensiveGroceries(
 //   [groceriesA, groceriesD, groceriesC]
 // )); //=> 2
+
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 module.exports = {
