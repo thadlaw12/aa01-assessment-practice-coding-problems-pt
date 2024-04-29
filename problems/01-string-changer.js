@@ -15,22 +15,7 @@ modified in some way. The operations are:
 */
 
 function stringChanger(word, operation) {
-  // word = "foo"
-  if (operation === "capitalize") {
-    return word[0].toUpperCase() + word.slice(1);
-  } else if (operation === "uppercase") {
-    return word.toUpperCase();
-  } else if (operation === "double") {
-    return word + word;
-  } else if (operation === "reverse") {
-    let reversedWord = "";
-    for (let i = word.length - 1; i >= 0; i--) {
-      reversedWord += word[i]; // reversedWord = reversedWord + word[i]
-    }
-    return reversedWord;
-  } else {
-    return word;
-  }
+  // Your code here
 }
 
 // console.log(stringChanger('foo', 'capitalize')); // 'Foo'
