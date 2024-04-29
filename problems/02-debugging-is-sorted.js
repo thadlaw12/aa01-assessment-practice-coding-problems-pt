@@ -6,17 +6,18 @@ code is not working correctly. Help them fix it!
 */
 
 function isSorted(nums) {
-  for (let i = 0; i < nums.length; i++) {
-    if (nums[i - 1] < nums[i]) {
+  // nums = [1,2,3,4,5]
+  for (let i = 1; i < nums.length; i++) {
+    if (nums[i - 1] > nums[i]) {
       return false;
     }
   }
   return true;
 }
 
-// console.log(isSorted([1]));                // true
-// console.log(isSorted([1, 2, 3, 4, 5]));    // true
-// console.log(isSorted([2, 2, 4, 4]));       // true
+// console.log(isSorted([1])); // true
+// console.log(isSorted([1, 2, 3, 4, 5])); // true
+// console.log(isSorted([2, 2, 4, 4])); // true
 // console.log(isSorted([1, 2, 4, 3, 5, 6])); // false
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/

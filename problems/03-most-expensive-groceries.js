@@ -20,18 +20,47 @@ mostExpensiveGroceries function to solve the problem.
 */
 
 function costOfGroceries(groceries) {
-  // Your code here 
+  // groceries = ['cheese', 'butter', 'eggs']
+  let cost = 0;
+  for (let i = 0; i < groceries.length; i++) {
+    let item = groceries[i];
+    if (item === "butter") {
+      cost += 1;
+    } else if (item === "eggs") {
+      cost += 2;
+    } else if (item === "milk") {
+      cost += 3;
+    } else if (item === "bread") {
+      cost += 4;
+    } else if (item === "cheese") {
+      cost += 5;
+    }
+  }
+  return cost;
 }
 
 function mostExpensiveGroceries(groceriesList) {
-  // Your code here 
+  // groceriesList = [        [groceriesA]          ,            [groceriesB]]
+  // groceriesList = [ ["cheese", "butter", "eggs"] , ["eggs", "milk", "bread", "bread"] ]
+  let highestCost = -Infinity; // -13 > -1000000000000
+  let highestIdx;
+  // edge case : if cost is negative, it is always smaller than 0
+  for (let i = 0; i < groceriesList.length; i++) {
+    let store = groceriesList[i];
+    let cost = costOfGroceries(store); // cost = 8 in this example
+    if (cost > highestCost) {
+      highestCost = cost; // highestCost = 13
+      highestIdx = i; // 1
+    }
+  }
+
+  return highestIdx;
 }
 
-
-// const groceriesA = ['cheese', 'butter', 'eggs'];
-// const groceriesB = ['eggs', 'milk', 'bread', 'bread'];
-// const groceriesC = ['cheese', 'bread'];
-// const groceriesD = ['eggs', 'butter'];
+const groceriesA = ["cheese", "butter", "eggs"];
+const groceriesB = ["eggs", "milk", "bread", "bread"];
+const groceriesC = ["cheese", "bread"];
+const groceriesD = ["eggs", "butter"];
 
 // console.log(costOfGroceries(groceriesA)); // 8
 // console.log(costOfGroceries(groceriesB)); // 13
@@ -47,7 +76,6 @@ function mostExpensiveGroceries(groceriesList) {
 // console.log(mostExpensiveGroceries(
 //   [groceriesA, groceriesD, groceriesC]
 // )); //=> 2
-
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 module.exports = {
